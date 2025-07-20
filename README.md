@@ -114,8 +114,8 @@ In the **claude_desktop_config.json** file, copy the below for **Windows**
 }
 ```
  For **Mac-OS** 
- replace C:\\Users\\<username>\\dev\\ebird-mcp-server
- with    /Users/<username>/dev/ebird-mcp-server
+ replace ```C:\\Users\\<username>\\dev\\ebird-mcp-server```
+ with    ```/Users/<username>/dev/ebird-mcp-server```
 
 
 ### Step 3: Test the Connection
