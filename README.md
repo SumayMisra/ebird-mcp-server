@@ -26,11 +26,15 @@ Before setting up this MCP server, ensure you have:
 ## Installation
 
 ### Step 1: Clone the Repository
-
+1. Go to the local git repository directory
+ Examples: C:\\Users\\<username>\\dev **Windows**
+           /Users/<username>/dev      **Mac-OS** 
+2. Run
 ```bash
 git clone https://github.com/SumayMisra/ebird-mcp-server.git
 cd ebird-mcp-server
 ```
+This will create a directory **ebird-mcp-server** in the git respository directory and place all code there 
 
 ### Step 2: Install Dependencies
 
@@ -86,27 +90,33 @@ This will test your API connection and basic functionality. If all tests pass, y
 ### Step 1: Configure Claude Desktop
 
 1. Open Claude Desktop
-2. Go to **Settings** (gear icon)
-3. Navigate to **Model Context Protocol**
-4. Click **Add Server**
+2. Go to **Settings** (profile icon)
+3. Click **Developer**
+4. Click **Edit Config**
+5. This opens the folder containing file **claude_desktop_config.json**
 
 ### Step 2: Add the MCP Server
 
-In the "Add Server" dialog:
-
-- **Name**: `eBird MCP Server` (or any name you prefer)
-- **Command**: `python`
-- **Arguments**: `server.py`
-- **Working Directory**: The full path to your cloned repository
-
-For example, if your repository is at `/Users/username/ebird-mcp-server`, the configuration would be:
-
+In the **claude_desktop_config.json** file, copy the below
 ```
-Name: eBird MCP Server
-Command: python
-Arguments: server.py
-Working Directory: /Users/username/ebird-mcp-server
+{
+  "mcpServers": {
+    "ebird": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "C:\\Users\\<username>\\dev\\ebird-mcp-server",
+        "run",
+        "server.py"
+      ]
+    }
+  }
+}
 ```
+ For **Mac-OS** 
+ replace C:\\Users\\<username>\\dev\\ebird-mcp-server
+ with    /Users/<username>/dev/ebird-mcp-server
+
 
 ### Step 3: Test the Connection
 
