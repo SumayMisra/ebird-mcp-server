@@ -97,7 +97,7 @@ This will test your API connection and basic functionality. If all tests pass, y
 
 ### Step 2: Add the MCP Server
 
-In the **claude_desktop_config.json** file, copy the below
+In the **claude_desktop_config.json** file, copy the below for **Windows**
 ```
 {
   "mcpServers": {
