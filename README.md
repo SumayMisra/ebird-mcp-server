@@ -122,8 +122,10 @@ In the **claude_desktop_config.json** file, copy the below for **Windows**
 
 1. Save the configuration
 2. Restart Claude Desktop
-3. Start a new conversation
-4. Try asking Claude about bird observations, for example:
+3. Start a New Chat
+4. Now you should see **eBird** in the drop down 
+   <img width="1073" height="541" alt="image" src="https://github.com/user-attachments/assets/272b8310-3912-46ad-8c60-f7b379f1b9fc" />
+5. Try asking Claude about bird observations, for example:
    - "What recent bird observations are there in California?"
    - "Show me notable bird sightings near San Francisco"
    - "What species have been observed in Central Park recently?"
