@@ -28,7 +28,7 @@ Before setting up this MCP server, ensure you have:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ebird-mcp-server.git
+git clone https://github.com/SumayMisra/ebird-mcp-server.git
 cd ebird-mcp-server
 ```
 
