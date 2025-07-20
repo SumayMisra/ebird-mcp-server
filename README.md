@@ -37,7 +37,7 @@ cd ebird-mcp-server
 The project uses `uv` for dependency management. If you don't have `uv` installed, you can install it with:
 
 ```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
+pip install uv
 ```
 
 Then install the project dependencies:
