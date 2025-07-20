@@ -34,20 +34,28 @@ def test_basic_endpoints():
     try:
         print("\nTesting basic endpoints...")
         
-        # Test getting a region list
-        regions = make_ebird_request("ref/region/list/country", {"fmt": "json"})
-        if regions:
-            print("✅ Region list endpoint working")
-        else:
-            print("❌ Region list endpoint failed")
-            return False
-            
-        # Test getting taxonomy
+        # Test getting taxonomy with limited results
         taxonomy = make_ebird_request("ref/taxonomy/ebird", {"fmt": "json", "maxResults": 5})
-        if taxonomy:
+        if taxonomy and len(taxonomy) > 0:
             print("✅ Taxonomy endpoint working")
         else:
             print("❌ Taxonomy endpoint failed")
+            return False
+            
+        # Test getting taxonomy versions
+        versions = make_ebird_request("ref/taxonomy/versions", {"fmt": "json"})
+        if versions:
+            print("✅ Taxonomy versions endpoint working")
+        else:
+            print("❌ Taxonomy versions endpoint failed")
+            return False
+            
+        # Test getting taxonomy groups
+        groups = make_ebird_request("ref/sppgroup/merlin", {"fmt": "json"})
+        if groups:
+            print("✅ Taxonomy groups endpoint working")
+        else:
+            print("❌ Taxonomy groups endpoint failed")
             return False
             
         return True
