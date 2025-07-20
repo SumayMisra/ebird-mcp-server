@@ -28,7 +28,7 @@ Before setting up this MCP server, ensure you have:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ebird-mcp-server.git
+git clone https://github.com/SumayMisra/ebird-mcp-server.git
 cd ebird-mcp-server
 ```
 
@@ -37,7 +37,7 @@ cd ebird-mcp-server
 The project uses `uv` for dependency management. If you don't have `uv` installed, you can install it with:
 
 ```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
+pip install uv
 ```
 
 Then install the project dependencies:

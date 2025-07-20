@@ -14,7 +14,7 @@ EBIRD_API_BASE = "https://api.ebird.org/v2"
 def make_ebird_request(endpoint: str, params: Optional[Dict] = None) -> Dict:
     """Make a request to the eBird API"""
     headers = {
-        "X-eBirdApiToken": "j01a0cuqas24"
+        "X-eBirdApiToken": "YOUR_API_TOKEN_HERE"
     }
     response = requests.get(f"{EBIRD_API_BASE}/{endpoint}", headers=headers, params=params)
     response.raise_for_status()
