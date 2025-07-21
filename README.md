@@ -58,7 +58,7 @@ pip install -r requirements.txt
 
 ### Step 3: Get an eBird API Token
 
-1. Visit the [eBird API website](https://documentation.ebird.org/en/home.html)
+1. Visit the [eBird API website](https://documenter.getpostman.com/view/664302/S1ENwy59)
 2. Sign up for an eBird account if you don't have one
 3. Request an API token by following their documentation
 4. Note down your API token for the next step
